@@ -62,8 +62,8 @@ int main(int argc, char* argv[]){
         exit(EXIT_FAILURE);
     }
 
-    int k = atoi(argv[1]); // Number of times to apply sin
-    int n = atoi(argv[2]); // Number of items in the vector
+    int k = atoi(argv[1]);  // Number of times to apply sin
+    int n = atoi(argv[2]);  // Number of items in the vector
     int nw = atoi(argv[3]); // Number of workers
 
     if(k < 1 || n < 1 || nw < 1){
