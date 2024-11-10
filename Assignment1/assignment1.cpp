@@ -21,7 +21,6 @@ using namespace std;
  */
 
 void init_vector(vector<float> &v, int n){
-
     for(int i=0; i<n; i++){
         //Generate a random number between 0 and 2π
         float r = static_cast<float>(rand()) / RAND_MAX * 2 * M_PI;
@@ -45,7 +44,6 @@ float f(float x, int k){
     for(int i=0; i<k; i++){
         x = sin(x);
     }
-
     return x;
 }
 
@@ -54,6 +52,8 @@ void body_t(const vector<float> &v, vector<float> &res, int s, int e, int k){
         res[i] = f(v[i], k);
     }
 }
+
+
 
 int main(int argc, char* argv[]){
 
